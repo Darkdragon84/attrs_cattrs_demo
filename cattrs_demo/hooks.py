@@ -37,10 +37,10 @@ converter.register_unstructure_hook(np.ndarray, unstructure_numpy)
 
 
 def main():
-    M = np.random.randn(10, 10).astype(np.float32)
-    mu = cattrs.unstructure(M)
-    M2 = cattrs.structure(mu, np.ndarray)
-    print(np.array_equal(M, M2))
+    mat1 = np.random.randn(10, 10).astype(np.float32)
+    mu = converter.unstructure(mat1)
+    mat2 = converter.structure(mu, np.ndarray)
+    print(np.array_equal(mat1, mat2))
 
 
 if __name__ == '__main__':
