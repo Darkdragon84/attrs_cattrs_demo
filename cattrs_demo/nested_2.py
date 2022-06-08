@@ -73,6 +73,7 @@ class PageInfo:
     table_locations: List[TableDetection]
     table_data: List[TableInfo]
 
+    # and further up the hierarchy, boilerplate galore!
     def to_dict(self) -> Dict[str, Any]:
         return {
             "table_locations": [td.to_dict() for td in self.table_locations],
