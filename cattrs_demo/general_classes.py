@@ -2,7 +2,7 @@ from typing import Any, Dict
 
 import numpy as np
 
-from hooks import converter
+from numpy_hooks import converter
 
 ANNOTATIONS = "__annotations__"
 
