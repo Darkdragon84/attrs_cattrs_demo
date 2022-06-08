@@ -1,9 +1,8 @@
 import collections.abc as abc
-from typing import TypeVar, Callable, Sequence, Mapping, get_origin, get_args, List, Optional, Union, Dict
 from functools import partial
+from typing import TypeVar, Callable, Sequence, Mapping, get_origin, get_args, List, Optional, Union, Dict
 
 import attr
-import cattrs
 import numpy as np
 from attr import define, Attribute
 
