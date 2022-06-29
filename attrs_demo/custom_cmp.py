@@ -75,7 +75,7 @@ def get_optional_type(c):
     return None
 
 
-def get_special_eq_fun(tp):
+def get_special_eq_fun(tp) -> Optional[EqFunType]:
     funs = get_eq_funs(tp, [])
     if not funs:
         return None
