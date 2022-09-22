@@ -1,0 +1,3 @@
+cattrs
+numpy
+attrs
